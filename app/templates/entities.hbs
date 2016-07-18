@@ -1,0 +1,23 @@
+<h1>Entities</h1>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Description</th>
+      <th>Ranking</th>
+      <th>status</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model as |entity|}}
+      <tr>
+        <th>{{entity.id}}</th>
+        <td>{{entity.description}}</td>
+        <td>{{entity.ranking}}</td>
+        <td>{{entity.status}}</td>
+      </tr>
+    {{/each}}
+
+  </tbody>
+</table>

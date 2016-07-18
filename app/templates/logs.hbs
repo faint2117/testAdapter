@@ -1,0 +1,25 @@
+<h1>Logs</h1>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Date</th>
+      <th>level</th>
+      <th>logger</th>
+      <th>message</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model as |entity|}}
+      <tr>
+        <th>{{entity.id}}</th>
+        <td>{{entity.date}}</td>
+        <td>{{entity.level}}</td>
+        <td>{{entity.logger}}</td>
+        <td>{{entity.message}}</td>
+      </tr>
+    {{/each}}
+
+  </tbody>
+</table>
